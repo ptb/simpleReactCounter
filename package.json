@@ -1,18 +1,19 @@
 {
-  "name": "simpleReactCounter",
-  "version": "0.1.0",
-  "private": true,
-  "devDependencies": {
-    "react-scripts": "0.9.3"
-  },
+  "author": "Peter T Bosse II <ptb@ioutime.com> (http://ptb2.me/)",
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "babel-core": "^6.26.0",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-uglify": "^3.0.0",
+    "serve": "^6.5.3"
   },
+  "license": "Apache-2.0",
+  "main": "docs/js/index.js",
+  "name": "simpleReactCounter",
+  "repository": "https://github.com/ptb/simpleReactCounter.git",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "build": "rollup -c",
+    "start": "serve docs"
+  },
+  "version": "1.0.0"
 }
